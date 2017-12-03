@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Todo List with localStorage (HTML5)</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"> 
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="container">
+    <h2 class="bug_test_heading">Todo List with localStorage (HTML5)</h2>
+    <div class="row">
+      <form class="test_insert">
+        <div class="col-md-3">
+          <label>Title</label>	
+          <input type="text" id="txt_title" class="form-control">
+        </div>        
+        <div class="col-md-7">
+          <label>Description</label>
+          <textarea id="txt_description" class="form-control" rows="1"></textarea>
+        </div>
+        <div class="col-md-2">
+          <label>&nbsp;</label>
+          <div><input type="button" id="submit" value="submit" class="btn btn-primary"></div>
+        </div>
+      </form>
+    </div>
+    <div class="report_area">
+      <div class="col-md-8">
+        <h3 class="bug_founded_list">Todo List</h3>
+        
+        <table class="table table-hover">
+            <thead>
+              <th>No</th>
+              <th>Title</th>
+              <th>Decription</th>
+              <th>Done</th>
+            </thead>
+            <tbody id="table_todoList">
+                
+            </tbody>
+        </table>
+        <p id="p_nothingToShowInToDo">Nothing to show here</p>  
+      </div>
+      <div class="col-md-4">
+        <h3 class="bug_solved_list">Done List</h3>
+        
+        <table class="table table-hover">
+            <thead>
+              <th>No</th>
+              <th>Title</th>
+              <th>Decription</th>
+            </thead>
+            <tbody id="table_doneList">
+                
+            </tbody>
+        </table>
+        <p id="p_nothingToShowInDone">Nothing to show here</p>
+      </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+<script src="js/app.js"></script>
+</body>
+</html>
